@@ -34,22 +34,29 @@
 
 
 
-function isPrime(num) {
-    if (num < 2) return false;
-    for (let i = 2; i <= num / 2; i++) {
-        if (num % i === 0) {
-            return false;
+function prime(num){
+    if(num<2){
+        return false
+    }
+    
+    for(let i=2 ; i*i<=num ; i++){
+        if(num%i===0){
+            return false
         }
     }
-    return true;
+    return true
 }
 
-function findPrimes(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        if (isPrime(arr[i])) {
-            console.log(arr[i]);
+function finding(arr){
+    let isPrime = []
+    
+    for(let i=0 ; i<arr.length ; i++){
+        if(prime(arr[i])){
+            isPrime.push(arr[i])
         }
     }
+    
+    return isPrime
 }
 
-findPrimes([1, 2, 3, 4, 5, 6, 7, 9, 11, 15, 17]);
+console.log(finding([1,2,3,4,5,6,7,8,9]))
