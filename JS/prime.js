@@ -49,13 +49,16 @@ function prime(num){
 
 function finding(arr){
     let isPrime = []
+    // let sum = 0
     
     for(let i=0 ; i<arr.length ; i++){
         if(prime(arr[i])){
             isPrime.push(arr[i])
+            // sum+=arr[i]
         }
     }
     
+    // return sum
     return isPrime
 }
 
