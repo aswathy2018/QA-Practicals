@@ -6,7 +6,6 @@ while(arr[length]!=undefined){
 }
 
 for(let i=0 ; i<length-1 ; i++){
-    console.log('first: ',arr[i])
     arr[i] = arr[i]                                                                                                                                                                     
 }
 
