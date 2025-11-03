@@ -1,12 +1,12 @@
-// let arr = [1,2,3,4,3,1,4,2]
-// let temp = []
+let arr = [1,2,3,4,3,1,4,2]
+let temp = []
 
-// for(let i=arr.length/2 ; i>=0 ; i--){
-//     temp = arr[i]
-//     arr[i] = arr[arr.length-1-i]
-//     arr[arr.length-1-i] = temp
-// }
-// console.log('Reveresed array: ',arr)
+for(let i=arr.length/2 ; i>=0 ; i--){
+    temp = arr[i]
+    arr[i] = arr[arr.length-1-i]
+    arr[arr.length-1-i] = temp
+}
+console.log('Reveresed array: ',arr)
 
 
 
